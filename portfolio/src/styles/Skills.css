@@ -1,0 +1,65 @@
+.skills-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    padding: 1.5rem 1rem;
+    background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 900px;
+    margin: 0 auto; /* Center the entire section on the page */
+  }
+  
+  .skills-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #111;
+    text-align: left;
+  }
+  
+  .skills-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Align buttons to the left */
+    gap: 12px;
+    width: 100%;
+  }
+  .button-light-skills {
+    background-color: #f3efff; /* soft purple background */
+    color: #7e22ce;            /* deep lavender text */
+    border: 1px solid #e0d7fa;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .button-light-skills:hover {
+    background-color: #e8ddff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  .button-light-skills:active {
+    background-color: #ddd0ff;
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  }
+  
+  @media (max-width: 600px) {
+    .skills-buttons {
+      gap: 10px;
+    }
+  
+    .button-light {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .skills-title {
+      font-size: 1.5rem;
+    }
+  }
+  

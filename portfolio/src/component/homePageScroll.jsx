@@ -4,6 +4,9 @@ import avtar from "../assets/image.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn,faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faCodeBranch } from '@fortawesome/free-solid-svg-icons';
+import About from "./About";
+import Skills from "./Skills";
+import Projects from "./Projects";
 
 
 const HomePageScroll = () => {
@@ -58,10 +61,12 @@ const HomePageScroll = () => {
           </div>
         </section>
       </section>
-      <section>project</section>
-      <section>Certification</section>
-      <section>skills</section>
-      <section>social media</section>
+      <About/>
+      <Skills/>
+      <h4 id="project">Projects</h4>
+      <Projects/>
+
+   
     </div>
   );
 };
