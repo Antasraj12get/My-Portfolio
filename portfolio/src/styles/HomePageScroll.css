@@ -1,0 +1,142 @@
+.homeScroll{
+    width: 55%;
+}
+.info-section {
+    padding: 40px 20px;
+    background-color: #fff;
+  }
+  
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+  }
+  
+  .avatar-card img {
+    width: auto;
+    border-radius: 20px;
+    height: 400px;
+  }
+  
+  .quote-card {
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    height: 340px;
+    width: 140px;
+    padding: 30px;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+    line-height: 1.6;
+  }
+
+  .links-container {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 0 auto;
+  }
+  
+  .link-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 10px;
+    height: 100px;
+    border-radius: 16px;
+    margin-top: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Inter', sans-serif;
+  }
+
+  
+  
+  .link-card p {
+    flex: 1;
+    font-size: 14px;
+    color: #333;
+    margin-left: 10px;
+  }
+
+
+  
+  .link-card span {
+    font-size: 14px;
+    color: rgb(165, 161, 161);
+    margin-left: 10px;
+  }
+  
+  .link-card button {
+    padding: 6px 12px;
+    border: none;
+    background: #eee;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+
+  @media (max-width: 768px) {
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .links-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .quote-card {
+      text-align: center;
+    }
+  }
+  
+ .leetcode {
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .yoyo{
+   padding-left: 25px;
+
+    
+  }
+
+  
+.leetcode:hover,
+  .leetcode:active {
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+
+  .linkedin {
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .linkedin:hover,
+  .linkedin:active {
+    background-color: #0A66C2; /* LinkedIn blue */
+    color: #fff;
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(10, 102, 194, 0.4);
+  }
+
+  .github {
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .github:hover,
+  .github:active {
+    background-color: #5e17eb; /* vibrant purple-indigo */
+    color: #fff;
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(94, 23, 235, 0.4);
+  }

@@ -1,0 +1,66 @@
+.home {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 80px 50px;
+  background-color: #fff;
+  color: #000;
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 10px;
+}
+
+.description span {
+  font-size: 20px;
+  color: #555;
+  font-weight: 500;
+}
+/* #798fff */
+#getCv {
+  margin-top: 30px;
+}
+
+
+#getCv button {
+  background-color: #0276FF;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+justify-content: center;
+  width: 150px;
+  font-family: "RM Neue",sans-serif;
+  font-size: 100%;
+  padding: 10px 21px;
+  text-align: center;
+  transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+
+}
+
+#getCv button:active {
+  background-color: #006AE8;
+}
+
+#getCv button:hover {
+  background-color: #1C84FF;
+}
