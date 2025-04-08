@@ -4,7 +4,7 @@ import "../styles/Skills.css";
 const skills = [
   "HTML", "CSS", "JavaScript", "React", "Node.js",
   "MongoDB", "Express", "Tailwind CSS", "Git", "GitHub",
-  "Redux", "TypeScript", "REST API", "Next.js", "Firebase"
+  "Redux", "TypeScript", "REST API", "Next.js", "Firebase","+"
 ];
 
 const Skills = () => {

@@ -1,12 +1,14 @@
 import React from "react";
 import "../styles/HomePageScroll.css";
-import avtar from "../assets/image.png"
+import avtar from "../assets/Sidedp.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn,faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Projects";
+import Certification from "./Certification";
+import Challenges from "./Challenges";
 
 
 const HomePageScroll = () => {
@@ -61,10 +63,14 @@ const HomePageScroll = () => {
           </div>
         </section>
       </section>
+      <Challenges/>
       <About/>
       <Skills/>
-      <h4 id="project">Projects</h4>
+      <h4 className="headings-tags">Projects</h4>
       <Projects/>
+      <h4 className="headings-tags">Certification</h4>
+      <Certification/>
+
 
    
     </div>

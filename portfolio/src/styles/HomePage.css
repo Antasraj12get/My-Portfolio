@@ -34,10 +34,13 @@ h1 {
 /* #798fff */
 #getCv {
   margin-top: 30px;
+  display: flex;
+gap: 10px;
 }
 
 
 #getCv button {
+  
   background-color: #0276FF;
   border-radius: 8px;
   border-style: none;
@@ -48,7 +51,7 @@ h1 {
   display: flex;
   align-items: center;
 justify-content: center;
-  width: 150px;
+  width: 130px;
   font-family: "RM Neue",sans-serif;
   font-size: 100%;
   padding: 10px 21px;
@@ -62,5 +65,57 @@ justify-content: center;
 }
 
 #getCv button:hover {
-  background-color: #1C84FF;
+  /* background-color: #1C84FF; */
+  color: #2253ce;            /* deep lavender text */
+  border: 1px solid #e0d7fa;
+  background: transparent;
+}
+
+
+
+/* CSS */
+.button-60 {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: .375em;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #363636;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1rem;
+  height: 2.5em;
+  justify-content: center;
+  line-height: 1.5;
+  padding: calc(.5em - 1px) 1em;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+  color: #2253ce;            /* deep lavender text */
+  border: 1px solid #e0d7fa;
+}
+
+.button-60:active {
+  border-color: #4a4a4a;
+  outline: 0;
+}
+
+.button-60:focus {
+  border-color: #485fc7;
+  outline: 0;
+}
+
+.button-60:hover {
+  border-color: #b5b5b5;
+}
+
+.button-60:focus:not(:active) {
+  box-shadow: rgba(72, 95, 199, .25) 0 0 0 .125em;
 }
