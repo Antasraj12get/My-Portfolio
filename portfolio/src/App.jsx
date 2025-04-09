@@ -10,8 +10,11 @@ function App() {
   return (
     <div id="container">
       <CursorTrail /> 
+      <div className="parent">
       <HomePage />
       <HomePageScroll />
+      </div>
+      
       {/* <FullAbout/> */}
     </div>
   );
