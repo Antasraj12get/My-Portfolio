@@ -1,8 +1,9 @@
 .skills-card {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the left */
-    padding: 1.5rem 1rem;
+    align-items: center; /* Align items to the left */
+    justify-content: flex-start;
+    padding: 1rem 15px;
     background-color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     max-width: 900px;

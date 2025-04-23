@@ -142,3 +142,41 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
   }
   
+
+
+  /* Add this below your existing CSS */
+
+/* Make each .project responsive in width */
+.project {
+  width: 100%;
+  max-width: 380px;
+  flex: 1 1 calc(50% - 30px); /* 2 per row on medium screens */
+}
+
+/* Tablet screens: 1 column layout */
+@media (max-width: 1024px) {
+  .project {
+    flex: 1 1 100%;
+  }
+}
+
+/* Already present: Mobile screens */
+@media (max-width: 640px) {
+  .project {
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+  }
+
+  .project-right {
+    width: 100%;
+    height: 140px;
+    margin-top: 12px;
+  }
+
+  .project-left {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+}

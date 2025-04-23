@@ -1,7 +1,19 @@
 .homeScroll{
-    width: 55%;
+    width: 80%;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+}
+@media(min-width:1305px) {
+ .homeScroll{
+  width: 70%;
+  overflow-y:visible;
+
+ }
+  
 }
 .homeScroll::-webkit-scrollbar {
   width: 5px;

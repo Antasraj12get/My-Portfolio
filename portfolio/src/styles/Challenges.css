@@ -5,6 +5,7 @@
   padding: 2rem 1rem;
   /* background-color: #f9f9f9; Soft neutral background */
   gap: 20px;
+  height: auto;
 }
 
 .challenge-box,
@@ -18,7 +19,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   transition: all 0.3s ease;
-  width: 250px;
+  width: 350px;
 }
 .challenge-box {
   background-color: #f9f9f9;
@@ -97,3 +98,40 @@
   transform: translateY(-2px);
 }
 
+
+
+
+@media (max-width: 768px) {
+  #challenges {
+    flex-direction: column;
+    align-items: center;
+  }
+  .challenge-box-mid{
+    width: 350px;
+  }
+
+  }
+  
+  /* #challenges .challenge-box,
+  #challenges .challenge-box-mid {
+    width: 100%;
+    max-width: 340px;
+  } */
+
+
+
+  @media (max-width: 768px) {
+    #challenges {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem; /* Optional: adds breathing space on small screens */
+    }
+  
+    .challenge-box,
+    .challenge-box-mid {
+      width: 100%;
+      max-width: none;
+    }
+  }
+  
+  
