@@ -3,24 +3,23 @@
     flex-direction: column;
     align-items: center; /* Align items to the left */
     justify-content: flex-start;
-    padding: 1rem 15px;
+    padding: 1rem 10px;
     background-color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    max-width: 900px;
     margin: 0 auto; /* Center the entire section on the page */
   }
   
-  .skills-title {
+  /* .skills-title {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
     color: #111;
     text-align: left;
   }
-  
+   */
   .skills-buttons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start; /* Align buttons to the left */
+    justify-content: center; /* Align buttons to the left */
     gap: 12px;
     width: 100%;
   }

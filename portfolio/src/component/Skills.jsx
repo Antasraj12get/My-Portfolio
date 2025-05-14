@@ -2,9 +2,9 @@ import React from 'react';
 import "../styles/Skills.css";
 
 const skills = [
-  "HTML", "CSS", "JavaScript", "React", "Node.js",
-  "MongoDB", "Express", "Tailwind CSS", "Git", "GitHub",
-  "Redux", "TypeScript", "REST API", "Next.js", "Firebase","+"
+  "HTML", "CSS", "JavaScript", "React","Astro Js","Shadcn","CMS", "Node.js",
+  "MongoDB", "Express", "Tailwind CSS","BootStrap", "Git", "GitHub",
+  "Redux", "TypeScript", "REST API", "Next.js", "+"
 ];
 
 const Skills = () => {

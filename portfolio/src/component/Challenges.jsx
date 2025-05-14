@@ -29,13 +29,13 @@ const Challenges = () => {
         </div>
       </div>
       <div className="challenge-box  challenges-box">
-        <h2>30 days Front end </h2>
+        <h2>130 days GFG </h2>
         <div className="key-points">
           <span id="first">Active • </span>
-          <span id="second">25 days Left</span>
-          <span id="third">30+ Projects</span>
-          <span id="fourth">JS</span>
-          <span id="fifth">React</span>
+          <span id="second">123 days Left</span>
+          <span id="third">Swags-T-Shirt </span>
+          <span id="fourth">DSA</span>
+          <span id="fifth">Challenge</span>
         </div>
       </div>
     </div>

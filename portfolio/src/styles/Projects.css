@@ -1,4 +1,4 @@
-#project-container {
+/* #project-container {
     padding: 1.5rem 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -7,7 +7,6 @@
   
   .project {
     width: 380px;
-    /* max-width: 580px; */
     height: 170px;
     background-color: #ffffff;
     border: 1px solid #eee;
@@ -78,7 +77,6 @@
     object-fit: cover;
   }
   
-  /* Responsive */
   @media (max-width: 640px) {
     .project {
       flex-direction: column;
@@ -144,13 +142,182 @@
   
 
 
-  /* Add this below your existing CSS */
-
-/* Make each .project responsive in width */
 .project {
   width: 100%;
   max-width: 380px;
-  flex: 1 1 calc(50% - 30px); /* 2 per row on medium screens */
+  flex: 1 1 calc(50% - 30px);
+}
+
+@media (max-width: 1024px) {
+  .project {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .project {
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+  }
+
+  .project-right {
+    width: 100%;
+    height: 140px;
+    margin-top: 12px;
+  }
+
+  .project-left {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#project-container {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project {
+  width: 100%;
+  max-width: 380px;
+  flex: 1 1 calc(50% - 30px);
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.project:hover {
+  background-color: #f0f0ff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.project:active {
+  background-color: #e5e0ff;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.project-left {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.project-left-image-logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.project-left-content h3 {
+  font-size: 1rem;
+  margin: 0;
+  color: #000;
+}
+
+.project-left-content p {
+  font-size: 0.85rem;
+  color: #777;
+  margin: 4px 0 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project-right {
+  width: 180px;
+  height: 140px;
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.project-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 4px;
+}
+
+.view-project-btn {
+  background-color: #f0f6ff;
+  color: #1a73e8;
+  border: 1px solid #d0e3ff;
+  padding: 5px 12px;
+  font-size: 0.75rem;
+  font-family: 'Inter', sans-serif;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.view-project-btn:hover {
+  background-color: #e0edff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+
+.view-project-btn:active {
+  background-color: #d0e3ff;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
 }
 
 /* Tablet screens: 1 column layout */
@@ -160,7 +327,7 @@
   }
 }
 
-/* Already present: Mobile screens */
+/* Mobile screens: stack layout */
 @media (max-width: 640px) {
   .project {
     flex-direction: column;
@@ -180,3 +347,4 @@
     width: 100%;
   }
 }
+

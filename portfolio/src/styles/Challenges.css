@@ -1,9 +1,8 @@
-#challenges {
+/* #challenges {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding: 2rem 1rem;
-  /* background-color: #f9f9f9; Soft neutral background */
   gap: 20px;
   height: auto;
 }
@@ -11,7 +10,7 @@
 .challenge-box,
 .challenge-box-mid {
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03); /* Softer shadow */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03); 
   padding: 16px 14px;
   font-family: "Inter", sans-serif;
   display: flex;
@@ -39,7 +38,6 @@
   margin-bottom: 12px;
   padding: 8px 12px;
   border-radius: 10px;
-  /* background-color: #f0f0f0; Light gray background */
   color: #333333;
 }
 
@@ -71,29 +69,21 @@
   min-width: 80px;
 }
 
-/* .challenge-box:hover,
-  .challenge-box-mid:hover {
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
-    transform: translateY(-2px);
-  } */
 
-/* Hover for Left Box */
 .challenge-box:hover {
-  background-color: #f0f0f0; /* Slightly darker gray */
+  background-color: #f0f0f0; 
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
   transform: translateY(-2px);
 }
 
-/* Hover for Middle Box */
 .challenge-box-mid:hover {
-  background-color: #e4f2fc; /* Slightly deeper blue */
+  background-color: #e4f2fc; 
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
   transform: translateY(-2px);
 }
 
-/* Hover for Right Box (box-alt) */
 .challenges-box:hover {
-  background-color: #ffe9d5; /* Deeper peach/orange */
+  background-color: #ffe9d5; 
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
   transform: translateY(-2px);
 }
@@ -111,12 +101,7 @@
   }
 
   }
-  
-  /* #challenges .challenge-box,
-  #challenges .challenge-box-mid {
-    width: 100%;
-    max-width: 340px;
-  } */
+
 
 
 
@@ -124,7 +109,7 @@
     #challenges {
       flex-direction: column;
       align-items: center;
-      padding: 1rem; /* Optional: adds breathing space on small screens */
+      padding: 1rem;
     }
   
     .challenge-box,
@@ -134,4 +119,142 @@
     }
   }
   
-  
+   */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#challenges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 2rem 1rem;
+}
+
+/* Cards will flex and resize naturally */
+.challenge-box,
+.challenge-box-mid {
+  flex: 1 1 clamp(250px, 30%, 360px); /* min 250px, prefers 30% of container, max 360px */
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  padding: 20px 18px;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+  min-height: 280px;
+  background-color: #f9f9f9;
+}
+
+.challenge-box-mid {
+  background-color: #f5fafe;
+}
+
+/* Headings */
+.challenge-box h2,
+.challenge-box-mid h2 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  color: #333333;
+  line-height: 1.4;
+}
+
+/* Tag Containers */
+.key-points,
+.items,
+.levels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+/* Tag Items */
+.key-points span,
+.items span,
+.levels span {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #f1f0f0;
+  background-color: #fbf9f9;
+  color: #444444;
+  white-space: nowrap;
+}
+
+#first,
+#second,
+#third {
+  min-width: 80px;
+}
+
+/* Hover Effects */
+.challenge-box:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transform: translateY(-4px);
+}
+
+.challenge-box-mid:hover {
+  background-color: #e4f2fc;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transform: translateY(-4px);
+}
+
+.challenges-box:hover {
+  background-color: #ffe9d5;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transform: translateY(-4px);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  #challenges {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1rem;
+  }
+
+  .challenge-box,
+  .challenge-box-mid {
+    flex: 1 1 100%;
+    min-width: 90%;
+    min-height: auto;
+  }
+}
