@@ -1,24 +1,30 @@
-import React from 'react';
+import React from "react";
 import "../styles/About.css";
 
 const About = () => {
-  return (
-    <div className="about-section">
-      <div className="about-card">
-        {/* <h2>About Me</h2> */}
-        <p>
-          I'm Antas Raj Pathak, a passionate Full Stack Developer (MERN) with a knack for building dynamic web applications.
-          Alongside development, I’m diving into the worlds of SEO and DevOps to broaden my skill set. Currently, I'm also on a
-          365-day DSA challenge, solving problems daily to strengthen my problem-solving abilities and stay sharp.
-        </p>
-        <p>
-          I'm always open to learning, exploring new tech, and collaborating on exciting projects. Whether it's clean code,
-          user-first UI/UX, or scalable systems—I'm here for it all.
-        </p>
-        <button className='button-light'>Know More...</button>
-      </div>
-    </div>
-  );
+	return (
+		<div className="about-section">
+			<div className="about-card">
+				{/* <h2>About Me</h2> */}
+				<p>
+					Hello, and thank you for visiting my portfolio. My name is <b>Antas Raj
+					Pathak</b>, and I am a passionate and dedicated <b>Full Stack Developer</b>,
+					specializing in the <b>MERN stack</b> (MongoDB, Express.js, React.js, and
+					Node.js). Alongside this, I have working knowledge of Astro.js,
+					 and C++ at a basic to intermediate level. I’m currently
+					expanding my expertise in <b>cloud services and deployment practices</b>.
+					<br />I completed my <b>Bachelor of Computer Applications</b> (BCA) from MLK
+					PG College, Balrampur in 2024, and later pursued Full Stack
+					Development training from <b>Internshala</b>, where I achieved an aggregate
+					score of <b><em>85%</em></b>.
+					<br />
+					Originally from Shrawasti, Uttar Pradesh, I am currently open to
+					relocation as per job requirements.
+				</p>
+				<button className="button-light">Know More...</button>
+			</div>
+		</div>
+	);
 };
 
 export default About;

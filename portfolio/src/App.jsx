@@ -13,6 +13,7 @@ function App() {
       <div className="parent">
       <HomePage />
       <HomePageScroll />
+      {/* <FullAbout/> */}
       </div>
       
       {/* <FullAbout/> */}

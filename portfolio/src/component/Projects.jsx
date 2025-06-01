@@ -6,9 +6,6 @@
 // import Antas from '../assets/Antas.png'
 // import BM from '../assets/Bookmanagement.png'
 
-
-
-
 // const Projects = () => {
 //   return (
 //     <div id="project-container">
@@ -35,7 +32,6 @@
 //         </div>
 //       </div>
 
-
 //       <div className="project">
 //         <div className="project-left">
 //           <div className="project-left-image-logo">
@@ -58,8 +54,6 @@
 //           />
 //         </div>
 //       </div>
-
-
 
 //       <div className="project">
 //         <div className="project-left">
@@ -84,8 +78,6 @@
 //         </div>
 //       </div>
 
-
-
 //       <div className="project">
 //         <div className="project-left">
 //           <div className="project-left-image-logo">
@@ -109,9 +101,6 @@
 //         </div>
 //       </div>
 
-
-
-
 //       <div className="project">
 //         <div className="project-left">
 //           <div className="project-left-image-logo">
@@ -134,8 +123,6 @@
 //           />
 //         </div>
 //       </div>
-
-
 
 //       <div className="project">
 //         <div className="project-left">
@@ -166,85 +153,87 @@
 
 // export default Projects;
 
-
-
-
-
-
-
-
-
-
-
 import React from "react";
 import "../styles/Projects.css";
-import web from '../assets/webAnimations.png';
-import currency from '../assets/currency.png';
-import yt from '../assets/youtube.png';
-import Antas from '../assets/Antas.png';
-import BM from '../assets/Bookmanagement.png';
+import web from "../assets/webAnimations.png";
+import currency from "../assets/currency.png";
+import yt from "../assets/youtube.png";
+import Antas from "../assets/Antas.png";
+import BM from "../assets/Bookmanagement.png";
 
 const Projects = () => {
-  return (
-    <div id="project-container">
-      {[
-        {
-          title: "Advance UI",
-          link: "https://web-animations-seven.vercel.app/",
-          logo: "https://w7.pngwing.com/pngs/436/888/png-transparent-vercel-hd-logo-thumbnail.png",
-          image: web,
-        },
-        {
-          title: "Youtube (MERN Stack)",
-          link: "https://github.com/Antasraj12get/YouTube.git",
-          logo: "https://cdn.pixabay.com/photo/2021/09/11/12/17/github-6615451_1280.png",
-          image: yt,
-        },
-        {
-          title: "ShoppyGlobe Backend (E-Commerce)",
-          link: "https://github.com/Antasraj12get/Backend-shoppyGlobe.git",
-          logo: "https://cdn.pixabay.com/photo/2021/09/11/12/17/github-6615451_1280.png",
-          image: "https://d3m1rm8xuevz4q.cloudfront.net/wp-content/uploads/2022/10/Model-View-Controller.png.webp",
-        },
-        {
-          title: "Portfolio",
-          link: "https://antas-raj-pathak-new.vercel.app/",
-          logo: "https://w7.pngwing.com/pngs/436/888/png-transparent-vercel-hd-logo-thumbnail.png",
-          image: Antas,
-        },
-        {
-          title: "Book Management App",
-          link: "https://books-management-application.vercel.app/",
-          logo: "https://w7.pngwing.com/pngs/436/888/png-transparent-vercel-hd-logo-thumbnail.png",
-          image: BM,
-        },
-        {
-          title: "Currency Converter",
-          link: "https://currency-converter-three-inky.vercel.app/",
-          logo: "https://w7.pngwing.com/pngs/436/888/png-transparent-vercel-hd-logo-thumbnail.png",
-          image: currency,
-        }
-      ].map((project, index) => (
-        <div className="project" key={index}>
-          <div className="project-left">
-            <div className="project-left-image-logo">
-              <img src={project.logo} alt="logo" />
-            </div>
-            <div className="project-left-content">
-              <h3>{project.title}</h3>
-              <a href={project.link} className="project-meta" target="_blank" rel="noreferrer">
-                <button className="view-project-btn">View Project</button>
-              </a>
-            </div>
-          </div>
-          <div className="project-right">
-            <img src={project.image} alt="preview" />
-          </div>
-        </div>
-      ))}
-    </div>
-  );
+	return (
+		<div id="project-container">
+			{[
+				{
+					title: "Advance UI",
+					link: "https://web-animations-seven.vercel.app/",
+					logo: "https://w7.pngwing.com/pngs/436/888/png-transparent-vercel-hd-logo-thumbnail.png",
+					image: web,
+				},
+				{
+					title: "Youtube (MERN Stack)",
+					link: "https://github.com/Antasraj12get/YouTube.git",
+					logo: "https://cdn.pixabay.com/photo/2021/09/11/12/17/github-6615451_1280.png",
+					image: yt,
+				},
+				{
+					title: "ShoppyGlobe Backend (E-Commerce)",
+					link: "https://github.com/Antasraj12get/Backend-shoppyGlobe.git",
+					logo: "https://cdn.pixabay.com/photo/2021/09/11/12/17/github-6615451_1280.png",
+					image:
+						"https://d3m1rm8xuevz4q.cloudfront.net/wp-content/uploads/2022/10/Model-View-Controller.png.webp",
+				},
+				{
+					title: "Portfolio",
+					link: "https://antas-raj-pathak-new.vercel.app/",
+					logo: "https://w7.pngwing.com/pngs/436/888/png-transparent-vercel-hd-logo-thumbnail.png",
+					image: Antas,
+				},
+				{
+					title: "Book Management App",
+					link: "https://books-management-application.vercel.app/",
+					logo: "https://w7.pngwing.com/pngs/436/888/png-transparent-vercel-hd-logo-thumbnail.png",
+					image: BM,
+				},
+				{
+					title: "Currency Converter",
+					link: "https://currency-converter-three-inky.vercel.app/",
+					logo: "https://w7.pngwing.com/pngs/436/888/png-transparent-vercel-hd-logo-thumbnail.png",
+					image: currency,
+				},
+				{
+					title: "Caffe Webs",
+					link: "        https://caffe-webs.vercel.app/",
+					logo: "https://w7.pngwing.com/pngs/436/888/png-transparent-vercel-hd-logo-thumbnail.png",
+					image:
+						"https://res.cloudinary.com/dtpohcwel/image/upload/v1748756007/Screenshot_2025-06-01_110113_psrwdq.png",
+				},
+			].map((project, index) => (
+				<div className="project" key={index}>
+					<div className="project-left">
+						<div className="project-left-image-logo">
+							<img src={project.logo} alt="logo" />
+						</div>
+						<div className="project-left-content">
+							<h3>{project.title}</h3>
+							<a
+								href={project.link}
+								className="project-meta"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<button className="view-project-btn">View Project</button>
+							</a>
+						</div>
+					</div>
+					<div className="project-right">
+						<img src={project.image} alt="preview" />
+					</div>
+				</div>
+			))}
+		</div>
+	);
 };
 
 export default Projects;
-

@@ -3,83 +3,71 @@ import '../styles/FullAbout.css';
 
 const FullAbout = () => {
   return (
-    <div className="about-section-white">
+    <section className="about-section-white">
       <h1 className="about-title">ABOUT ME</h1>
       <p className="about-intro">
-        I'm <strong>Antas Raj Pathak</strong>, Full Stack Developer (MERN) / DevOps Explorer
+        I'm <strong>Antas Raj Pathak</strong>, Full Stack Developer (MERN) & Web Enthusiast
       </p>
       <p className="about-description">
-        Passionate about clean code and intuitive UI/UX. I’m continuously learning and evolving—currently immersed in a
-        365-day DSA challenge, and exploring the realms of SEO and DevOps. I love building scalable web solutions and contributing
-        to exciting projects.
+        I’m a results-driven Full Stack Developer with a strong foundation in the MERN stack and a growing interest in cloud services and DevOps. 
+        Currently engaged in continuous learning through challenges like the 365-day DSA challenge, GFG 160-day track, and Aptitude 130-day series. 
+        I’m passionate about writing clean code, crafting meaningful user experiences, and contributing to collaborative development environments. 
+        I’ve also built and maintained projects in Astro.js and explored technologies like Python and C++.
       </p>
 
       <div className="about-content">
+        {/* Column 1: What I Do */}
         <div className="about-column">
           <h3 className="section-label yellow">What I Do?</h3>
-          <div className="about-item">
-            <img src="/icons/code-icon.svg" alt="Development" className="icon" />
-            <div>
-              <h4>Web Development</h4>
-              <p>
-                Creating responsive and high-performance websites and applications using MERN Stack (MongoDB, Express, React, Node).
-              </p>
+          {[
+            {
+              icon: "/icons/code-icon.svg",
+              title: "Web Development",
+              desc: "Building dynamic, responsive, and scalable web applications using the MERN stack and Astro.js."
+            },
+            {
+              icon: "/icons/cloud-icon.svg",
+              title: "Cloud & Deployment",
+              desc: "Learning cloud deployment strategies using platforms like Vercel and Netlify, and exploring CI/CD pipelines."
+            },
+            {
+              icon: "/icons/learning-icon.svg",
+              title: "Problem Solving",
+              desc: "Participating in long-term coding challenges and improving data structures, algorithms, and aptitude skills."
+            }
+          ].map((item, idx) => (
+            <div className="about-item" key={idx}>
+              <img src={item.icon} alt={item.title} className="icon" />
+              <div>
+                <h4>{item.title}</h4>
+                <p>{item.desc}</p>
+              </div>
             </div>
-          </div>
-          <div className="about-item">
-            <img src="/icons/seo-icon.svg" alt="SEO" className="icon" />
-            <div>
-              <h4>SEO Optimization</h4>
-              <p>
-                Enhancing search engine visibility through keyword research, metadata optimization, and content strategy.
-              </p>
-            </div>
-          </div>
-          <div className="about-item">
-            <img src="/icons/devops-icon.svg" alt="DevOps" className="icon" />
-            <div>
-              <h4>DevOps Basics</h4>
-              <p>
-                Exploring CI/CD pipelines, containerization and automated deployment strategies.
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
 
+        {/* Column 2: Quick Stats */}
         <div className="about-column">
-          <h3 className="section-label yellow">Fun Facts</h3>
+          <h3 className="section-label yellow">Quick Stats</h3>
           <div className="facts-grid">
-            <div className="fact-circle">
-              <h3>10+</h3>
-              <p>Years Experience</p>
-            </div>
-            <div className="fact-circle">
-              <h3>450</h3>
-              <p>Projects Done</p>
-            </div>
-            <div className="fact-circle">
-              <h3>65</h3>
-              <p>Awards</p>
-            </div>
-            <div className="fact-circle">
-              <h3>300+</h3>
-              <p>Happy Clients</p>
-            </div>
-            <div className="fact-circle">
-              <h3>650K</h3>
-              <p>Followers</p>
-            </div>
-            <div className="fact-circle">
-              <h3>+10</h3>
-              <p>New Videos Monthly</p>
-            </div>
+            {[
+              { value: "10+", label: "Tech Stack Explored" },
+              { value: "15+", label: "Projects Completed" },
+              { value: "85%", label: "Internshala Training Score" },
+              { value: "2024", label: "BCA Graduation Year" },
+              { value: "365+", label: "Days of DSA Journey" },
+              { value: "130+", label: "Aptitude Days Completed" }
+            ].map((fact, idx) => (
+              <div className="fact-circle" key={idx}>
+                <h3>{fact.value}</h3>
+                <p>{fact.label}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
 export default FullAbout;
-
-
