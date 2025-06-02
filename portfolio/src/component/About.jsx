@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/About.css";
+import { Link } from "react-router-dom";
 
 const About = () => {
 	return (
@@ -21,7 +22,7 @@ const About = () => {
 					Originally from Shrawasti, Uttar Pradesh, I am currently open to
 					relocation as per job requirements.
 				</p>
-				<button className="button-light">Know More...</button>
+				<button className="button-light"> <Link to="/fullAbout"> Know More...</Link></button>
 			</div>
 		</div>
 	);

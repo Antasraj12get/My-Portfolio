@@ -4,6 +4,7 @@ import "../styles/HomePage.css";
 import image from "../assets/dp.png";
 import resume from "../assets/Antas_Resume.pdf"; // <-- Make sure the PDF is placed in your assets folder
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   const[mark, setMark] = useState(0);
