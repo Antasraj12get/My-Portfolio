@@ -113,7 +113,7 @@ const HomePageScroll = () => {
 
   {/* Instagram - Gradient simulation with pink (since Tailwind doesn’t support full gradient on hover natively) */}
   <a
-    href="#"
+    href="https://www.instagram.com/antaspathak_?igsh=MTRibjJyODF6eWJ0Yg=="
     target="_blank"
     rel="noreferrer"
     className="flex items-center justify-between bg-[#f9f9f9] p-4 min-h-[110px] w-full rounded-xl shadow-sm transition-all duration-300 hover:bg-[#E1306C] hover:text-white hover:scale-[1.03]"
@@ -126,7 +126,7 @@ const HomePageScroll = () => {
 
   {/* GFG - Dark Green */}
   <a
-    href="#"
+    href="https://www.geeksforgeeks.org/user/sijjupath4dne/"
     target="_blank"
     rel="noreferrer"
     className="flex items-center justify-between bg-[#f9f9f9] p-4 min-h-[110px] w-full rounded-xl shadow-sm transition-all duration-300 hover:bg-[#2F8D46] hover:text-white hover:scale-[1.03]"
@@ -139,7 +139,7 @@ const HomePageScroll = () => {
 
   {/* Twitter - Sky Blue */}
   <a
-    href="#"
+    href="https://x.com/sijjju_64?s=09"
     target="_blank"
     rel="noreferrer"
     className="flex items-center justify-between bg-[#f9f9f9] p-4 min-h-[110px] w-full rounded-xl shadow-sm transition-all duration-300 hover:bg-[#1DA1F2] hover:text-white hover:scale-[1.03]"

@@ -12,7 +12,7 @@ const HomePage = () => {
     setMark(mark+ 1);
   }
   return (
-    <div className="home">
+    <div className="home ">
       <img src={image} alt="profileImage" className="profile-image" />
       <h1>Antas Raj Pathak</h1>
       <div className="description">
