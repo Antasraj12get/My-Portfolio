@@ -7,7 +7,6 @@ import currency from "../assets/currency.png";
 import yt from "../assets/youtube.png";
 import Antas from "../assets/Antas.png";
 import BM from "../assets/Bookmanagement.png";
-import paginations from "../assets/Pagination.png"
 
 const Projects = () => {
 	return (
