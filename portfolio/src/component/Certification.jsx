@@ -83,6 +83,33 @@ const Certification = () => {
           </a>
         </div>
 
+
+
+         {/* nsdc */}
+        <div className="project">
+          <div className="project-left">
+            <div className="project-left-image-logo">
+              <img
+                src="https://cdn.pixabay.com/photo/2021/09/11/12/17/github-6615451_1280.png"
+                alt="Training Logo"
+              />
+            </div>
+            <div className="project-left-content">
+              <h3> PGC(NSDC & Skill india)</h3>
+              <p className="project-meta">
+                <button className="view-project-btn">View Project</button>
+              </p>
+            </div>
+          </div>
+          <a href="https://res.cloudinary.com/dtpohcwel/image/upload/v1751296709/Screenshot_2025-06-30_204816_r9i5bu.png">
+            <div className="project-right">
+            <img src="https://res.cloudinary.com/dtpohcwel/image/upload/v1751296709/Screenshot_2025-06-30_204816_r9i5bu.png" alt="Full Stack Certificate" />
+          </div>
+          </a>
+        </div>
+
+        {/* https://res.cloudinary.com/dtpohcwel/image/upload/v1751296709/Screenshot_2025-06-30_204816_r9i5bu.png */}
+
         {/* AWS Course */}
         <div className="project">
           <div className="project-left">

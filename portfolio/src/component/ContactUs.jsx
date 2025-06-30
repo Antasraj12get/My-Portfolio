@@ -62,7 +62,7 @@ const ContactUs = () => {
                 onChange={handleChange}
                 required
                 className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
-                placeholder="Your name"
+                placeholder="Enter your name"
               />
             </div>
 
@@ -81,7 +81,7 @@ const ContactUs = () => {
                 onChange={handleChange}
                 required
                 className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
-                placeholder="you@example.com"
+                placeholder="u@gmail.com"
               />
             </div>
 
@@ -100,7 +100,7 @@ const ContactUs = () => {
                 onChange={handleChange}
                 required
                 className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
-                placeholder="What's this about?"
+                placeholder="type....."
               />
             </div>
 
@@ -118,7 +118,7 @@ const ContactUs = () => {
                 value={data.phoneNo}
                 onChange={handleChange}
                 className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
-                placeholder="Optional phone number"
+                placeholder="000000"
               />
             </div>
 

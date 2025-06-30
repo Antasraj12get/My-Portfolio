@@ -26,15 +26,15 @@ const HomePageScroll = () => {
   <div className="w-full h-full rounded-xl shadow-sm p-5 flex flex-col justify-center items-center text-center gap-4 hover:scale-[1.02] hover:shadow-md transition duration-300 bg-white">
     {/* Header */}
     <div>
-      <h2 className="text-lg font-semibold text-gray-800">🎉 Offer Letters</h2>
-      <p className="text-xs text-gray-500">Received so far</p>
+      <h2 className="text-lg font-semibold text-gray-800">12+ Project</h2>
+      <p className="text-xs text-gray-500">Continued....</p>
     </div>
 
     {/* Offer Stats */}
     <div>
-      <span className="text-3xl font-bold text-green-600">4+</span>
+      <span className="text-3xl font-bold text-green-600">8+ front-end</span>
       <p className="text-sm text-gray-700">
-        <span className="font-medium text-indigo-500">Internships:</span> 4
+        <span className="font-medium text-indigo-500">Full Stack developer</span> 4
       </p>
     </div>
 
